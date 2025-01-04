@@ -7,11 +7,10 @@ document
   });
 
 document.querySelector('a[href^="#"]').forEach((anchor) => {
-  anchor.add;
-  EventListener("click", function (e) {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
-    document.querySelector(this.getAttribute("href")).scrolllIntoView({
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
       behaviour: "smooth"
     });
   });
